@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>nameinprogress.</title>
+        <meta name="description" content="INSERT A DESCRIPTION HERE" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link id="theme" rel="stylesheet" href="themes/light.css" /> -->
+    </head>
+
+    <!-- 
+        Theme and Font: Change Theme and also the Japanese font (Handwritten / Digital / other)
+    -->
+
+    <body>
+        <h2 id="title">studygenki.</h2>
+        <div id="command-center" class="">
+            <div class="bar">
+                <div id="show-settings"class="button" onClick="showSettings();" tabindex="4">settings</div>
+                <div id="right-wing">score: XX / XX</div>
+            </div>
+
+            <div class="flashcard" onclick="flipCard()">
+                <div id="frontText">text_front</div>
+                <div id="backText" class="hidden">text_back</div>
+                <!--
+                <div class="bar">
+                    <input id="input-field" type="text" placeholder="Answer in _____" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" tabindex="1"/>
+                    <button class="typeButton"> > </button>
+                </div>
+                -->
+            </div>
+            <div class="bar">
+                <button class="fcbutton" onclick="nextWord()">STILL LEARNING</button>
+                <button class="fcbutton" onclick="removeWord()">KNOW</button>
+            </div>
+        </div>
+        <div id="settings-popup" class="hidden">
+            <div class="bar">
+                <div id="left-wing" onClick="hideSettings();">< back</div>
+                <div id="right-wing">more options</div>
+            </div>
+            <div id="settings-area">
+                <h2 id="subtitle">QUESTION TYPE</h2>
+                <div class= "sidebyside">
+                    <label id="checkboxes" class="container">Flashcard
+                        <input type="radio" checked="checked" name="questionType" value="fcard">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label id="checkboxes" class="container">Written
+                        <input type="radio" name="questionType" value="written">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <h2 id="subtitle">STUDY</h2>
+                <div class= "sidebyside">
+                    <label id="checkboxes" class="container">Hiragana
+                        <input type="checkbox" checked="checked" name="studyType">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label id="checkboxes" class="container">Katakana
+                        <input type="checkbox" name="studyType">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label id="checkboxes" class="container" onclick="showLessons()">Vocabulary
+                        <input type="checkbox" name="studyType" id="vocab">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label id="checkboxes" class="container" onclick="showLessons()">Kanji
+                        <input type="checkbox" name="studyType" id="kanji">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div id="genkilessons" style="display: none;">
+                    <h2 id="subtitle">GENKI LESSONS</h2>
+                    <div class= "sidebyside">
+                        <label id="checkboxes" class="container">Lesson 1
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">Lesson 2
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">Lesson 3
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">Lesson 4
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">Lesson 5
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">Lesson 6
+                            <input type="checkbox" name="lessonNum">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <h2 id="subtitle">ANSWER WITH</h2>
+                <div class= "sidebyside">
+                    <label id="checkboxes" class="container">English
+                        <input type="radio" checked="checked" name="answerType" value="english">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label id="checkboxes" class="container">Japanese
+                        <input type="radio" name="answerType" value="japanese">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            footer lol footer lol footer lol
+        </div>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

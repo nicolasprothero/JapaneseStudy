@@ -1,0 +1,30 @@
+{
+"Lesson 1" : [
+    {
+     "English": "College; University",
+     "Japanese": "だいがく"
+    },
+    {
+     "English": "High School",
+     "Japanese": "こうこう"
+    },
+    {
+     "English": "Student",
+     "Japanese": "がくせい"
+    }
+   ],
+"Lesson 2" : [
+    {
+     "English": "Ka",
+     "Japanese": "か"
+    },
+    {
+     "English": "Ke",
+     "Japanese": "け"
+    },
+    {
+     "English": "Ku",
+     "Japanese": "く"
+    }
+   ]
+}
