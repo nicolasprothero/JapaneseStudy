@@ -8,25 +8,49 @@ var flashcard = document.querySelector('.flashcard');
 var frontText = document.getElementById('frontText');
 var backText = document.getElementById('backText');
 
+var scoreLeft = document.getElementById('scoreLeft');
+var scoreRight = document.getElementById('scoreRight');
+let wordsCorrect = 0
+
 let frontShowing = true;
 let wordIndex = 0;
+
+let selectedLanguage = "English";
 
 // Imports in the words from json file
 import words from './words.json' assert {type: "json"};
 
 let wordListEnglish = [];
 let wordListJapanese = [];
-for(let i=0; i<words['Lesson 1'].length; i++) {
-    wordListEnglish.push(words['Lesson 1'][i].English);
-    wordListJapanese.push(words['Lesson 1'][i].Japanese);
-}
-for(let i=0; i<words['Lesson 2'].length; i++) {
-    wordListEnglish.push(words['Lesson 2'][i].English);
-    wordListJapanese.push(words['Lesson 2'][i].Japanese);
+
+window.init = function() {
+    wordListEnglish = [];
+    wordListJapanese = [];
+    for(let i=0; i<words['Lesson 1'].length; i++) {
+        wordListEnglish.push(words['Lesson 1'][i].English);
+        wordListJapanese.push(words['Lesson 1'][i].Japanese);
+    }
+    for(let i=0; i<words['Lesson 2'].length; i++) {
+        wordListEnglish.push(words['Lesson 2'][i].English);
+        wordListJapanese.push(words['Lesson 2'][i].Japanese);
+    }
+    scoreLeft.innerHTML = 0;
+    scoreRight.innerHTML = wordListEnglish.length;
+    wordIndex = 0;
+    wordsCorrect = 0;
+    frontShowing = true;
+    placeWord();
 }
 
-frontText.innerHTML = wordListEnglish[wordIndex];
-backText.innerHTML = wordListJapanese[wordIndex];
+window.placeWord = function() {
+    if(selectedLanguage == "english") {
+        frontText.innerHTML = wordListEnglish[wordIndex];
+        backText.innerHTML = wordListJapanese[wordIndex];
+    } else {
+        frontText.innerHTML = wordListJapanese[wordIndex];
+        backText.innerHTML = wordListEnglish[wordIndex];
+    }
+}
 
 window.removeWord = function() {
     if(!frontShowing){
@@ -37,8 +61,9 @@ window.removeWord = function() {
     if(wordIndex > wordListEnglish.length-1) {
         wordIndex = 0;
     }
-    frontText.innerHTML = wordListEnglish[wordIndex];
-    backText.innerHTML = wordListJapanese[wordIndex];
+    placeWord();
+    wordsCorrect = wordsCorrect + 1;
+    scoreLeft.innerHTML = wordsCorrect;
 }
 
 window.nextWord = function() {
@@ -50,12 +75,10 @@ window.nextWord = function() {
     } else {
         wordIndex = 0;
     }
-    frontText.innerHTML = wordListEnglish[wordIndex];
-    backText.innerHTML = wordListJapanese[wordIndex];
-    console.log(wordListEnglish)
+    placeWord();
 }
 
-window.flipCard = function() {
+window.flipCard = function(time) {
     if(frontShowing) {
         flashcard.style.transform = 'rotateX(180deg)';
         setTimeout(function(){
@@ -63,7 +86,7 @@ window.flipCard = function() {
             backText.classList.remove('hidden');
             flashcard.style.transform = '';
             frontShowing = !frontShowing
-        }, 200);
+        }, time);
     } else {
         flashcard.style.transform = 'rotateX(180deg)';
         setTimeout(function(){
@@ -71,7 +94,7 @@ window.flipCard = function() {
             frontText.classList.remove('hidden');
             flashcard.style.transform = '';
             frontShowing = !frontShowing
-        }, 200);
+        }, time);
     }
 }
 
@@ -91,14 +114,17 @@ window.showSettings = function() {
   
 window.hideSettings = function() {
     // RETURNS WHAT LANGUAGE TO ANSWER WITH
-    let selectedLanguage;
     for(const language of answerWith) {
         if(language.checked) {
             selectedLanguage = language.value;
             break;
         }
     }
+    console.log(selectedLanguage);
+    init();
     // HIDES SETTINGS POPUP THEN REVEALS COMMAND CENTER
     document.getElementById('settings-popup').classList.add('hidden');
     document.getElementById('command-center').classList.remove('hidden');
 }
+
+init();

@@ -92,11 +92,12 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 16px;
     margin: 1rem 1rem 2rem 1rem;
     cursor: pointer;
     border-radius: 0.4rem;
-    font-weight: 600;
+    font-family: Roboto mono;
+    line-height: 1.6rem;
 }
 
 .fcbutton:hover {

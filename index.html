@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>nameinprogress.</title>
-        <meta name="description" content="INSERT A DESCRIPTION HERE" />
+        <title>studygenki.</title>
+        <meta name="description" content="study genki vocabulary using flashcards" />
         <link rel="stylesheet" href="style.css" />
-        <!-- <link id="theme" rel="stylesheet" href="themes/light.css" /> -->
     </head>
 
     <!-- 
@@ -18,10 +17,10 @@
         <div id="command-center" class="">
             <div class="bar">
                 <div id="show-settings"class="button" onClick="showSettings();" tabindex="4">settings</div>
-                <div id="right-wing">score: XX / XX</div>
+                <div id="right-wing"><span id="scoreLeft">XX</span> / <span id="scoreRight">XX</span></div>
             </div>
 
-            <div class="flashcard" onclick="flipCard()">
+            <div class="flashcard" onclick="flipCard(200)">
                 <div id="frontText">text_front</div>
                 <div id="backText" class="hidden">text_back</div>
                 <!--
@@ -32,8 +31,8 @@
                 -->
             </div>
             <div class="bar">
-                <button class="fcbutton" onclick="nextWord()">STILL LEARNING</button>
-                <button class="fcbutton" onclick="removeWord()">KNOW</button>
+                <button class="fcbutton" onclick="nextWord()">still learning</button>
+                <button class="fcbutton" onclick="removeWord()">know</button>
             </div>
         </div>
         <div id="settings-popup" class="hidden">
@@ -88,7 +87,7 @@
                             <input type="checkbox" name="lessonNum">
                             <span class="checkmark"></span>
                         </label>
-                        <label id="checkboxes" class="container">Lesson 4
+                        <!-- <label id="checkboxes" class="container">Lesson 4
                             <input type="checkbox" name="lessonNum">
                             <span class="checkmark"></span>
                         </label>
@@ -99,11 +98,11 @@
                         <label id="checkboxes" class="container">Lesson 6
                             <input type="checkbox" name="lessonNum">
                             <span class="checkmark"></span>
-                        </label>
+                        </label> -->
                     </div>
                 </div>
 
-                <h2 id="subtitle">ANSWER WITH</h2>
+                <h2 id="subtitle">SHOW FIRST</h2>
                 <div class= "sidebyside">
                     <label id="checkboxes" class="container">English
                         <input type="radio" checked="checked" name="answerType" value="english">
