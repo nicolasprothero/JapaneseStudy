@@ -16,8 +16,8 @@ let wordIndex = 0;
 let selectedLanguage = "English";
 
 // Imports in the words from json file
-import words from './words.json' assert {type: "json"};
-import katakana from './katakana.json' assert {type: "json"};
+import words from './json/words.json' assert {type: "json"};
+import katakana from './json/katakana.json' assert {type: "json"};
 
 let wordListEnglish = [];
 let wordListJapanese = [];
