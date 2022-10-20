@@ -2,14 +2,12 @@ const answerWith = document.querySelectorAll('input[name="answerType"]');
 var genkiLessons = document.getElementById('genkilessons')
 var pickLessonVocab = document.getElementById('vocab');
 var pickLessonKanji = document.getElementById('kanji');
-
 var flashcard = document.querySelector('.flashcard');
-
 var frontText = document.getElementById('frontText');
 var backText = document.getElementById('backText');
-
 var scoreLeft = document.getElementById('scoreLeft');
 var scoreRight = document.getElementById('scoreRight');
+
 let wordsCorrect = 0
 
 let frontShowing = true;
@@ -19,6 +17,7 @@ let selectedLanguage = "English";
 
 // Imports in the words from json file
 import words from './words.json' assert {type: "json"};
+import katakana from './katakana.json' assert {type: "json"};
 
 let wordListEnglish = [];
 let wordListJapanese = [];
@@ -26,6 +25,10 @@ let wordListJapanese = [];
 window.init = function() {
     wordListEnglish = [];
     wordListJapanese = [];
+    for(let i=0; i<katakana['Ka'].length; i++) {
+        wordListEnglish.push(katakana['Ka'][i].English);
+        wordListJapanese.push(katakana['Ka'][i].Japanese);
+    }
     for(let i=0; i<words['Lesson 1'].length; i++) {
         wordListEnglish.push(words['Lesson 1'][i].English);
         wordListJapanese.push(words['Lesson 1'][i].Japanese);
@@ -33,6 +36,10 @@ window.init = function() {
     for(let i=0; i<words['Lesson 2'].length; i++) {
         wordListEnglish.push(words['Lesson 2'][i].English);
         wordListJapanese.push(words['Lesson 2'][i].Japanese);
+    }
+    for(let i=0; i<words['Lesson 3'].length; i++) {
+        wordListEnglish.push(words['Lesson 3'][i].English);
+        wordListJapanese.push(words['Lesson 3'][i].Japanese);
     }
     scoreLeft.innerHTML = 0;
     scoreRight.innerHTML = wordListEnglish.length;
@@ -110,6 +117,9 @@ window.showLessons = function() {
 window.showSettings = function() {
     document.getElementById('settings-popup').classList.remove('hidden');
     document.getElementById('command-center').classList.add('hidden');
+
+    document.getElementById('footer2').classList.remove('hidden');
+    document.getElementById('footer1').classList.add('hidden');
 }
   
 window.hideSettings = function() {
@@ -125,6 +135,9 @@ window.hideSettings = function() {
     // HIDES SETTINGS POPUP THEN REVEALS COMMAND CENTER
     document.getElementById('settings-popup').classList.add('hidden');
     document.getElementById('command-center').classList.remove('hidden');
+
+    document.getElementById('footer1').classList.remove('hidden');
+    document.getElementById('footer2').classList.add('hidden');
 }
 
 init();

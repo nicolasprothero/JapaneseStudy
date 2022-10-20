@@ -21,8 +21,8 @@
             </div>
 
             <div class="flashcard" onclick="flipCard(200)">
-                <div id="frontText">text_front</div>
-                <div id="backText" class="hidden">text_back</div>
+                <div id="frontText"></div>
+                <div id="backText" class="hidden"></div>
                 <!--
                 <div class="bar">
                     <input id="input-field" type="text" placeholder="Answer in _____" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" tabindex="1"/>
@@ -41,16 +41,18 @@
                 <div id="right-wing">more options</div>
             </div>
             <div id="settings-area">
-                <h2 id="subtitle">QUESTION TYPE</h2>
+                <h2 id="subtitle">QUESTION TYPE (more coming soon シ)</h2>
                 <div class= "sidebyside">
                     <label id="checkboxes" class="container">Flashcard
                         <input type="radio" checked="checked" name="questionType" value="fcard">
                         <span class="checkmark"></span>
                     </label>
+                    <!--
                     <label id="checkboxes" class="container">Written
                         <input type="radio" name="questionType" value="written">
                         <span class="checkmark"></span>
                     </label>
+                    -->
                 </div>
                 <h2 id="subtitle">STUDY</h2>
                 <div class= "sidebyside">
@@ -71,6 +73,85 @@
                         <span class="checkmark"></span>
                     </label>
                 </div>
+                <!--
+                <div id="kanaLessons">
+                    <h2 id="subtitle">KANA LESSONS</h2>
+                    <div class= "sidebysidesmall">
+                        <label id="checkboxes" class="container">-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">k-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">s-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">t-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">n-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">h-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">y-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">r-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">w-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class= "sidebysidesmall">
+                        <label id="checkboxes" class="container">g-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">z-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">d-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">b-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">p-
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class= "sidebysidesmall">
+                        <label id="checkboxes" class="container">ーya
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">-yu
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="checkboxes" class="container">-yo
+                            <input type="checkbox" name="kanaLetter">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            -->
 
                 <div id="genkilessons" style="display: none;">
                     <h2 id="subtitle">GENKI LESSONS</h2>
@@ -101,24 +182,27 @@
                         </label> -->
                     </div>
                 </div>
-
                 <h2 id="subtitle">SHOW FIRST</h2>
                 <div class= "sidebyside">
-                    <label id="checkboxes" class="container">English
-                        <input type="radio" checked="checked" name="answerType" value="english">
+                    <label id="checkboxes" class="container">Japanese
+                        <input type="radio" checked="checked" name="answerType" value="japanese">
                         <span class="checkmark"></span>
                     </label>
-                    <label id="checkboxes" class="container">Japanese
-                        <input type="radio" name="answerType" value="japanese">
+                    <label id="checkboxes" class="container">English
+                        <input type="radio"name="answerType" value="english">
                         <span class="checkmark"></span>
                     </label>
                 </div>
             </div>
         </div>
         <div id="footer">
-            footer lol footer lol footer lol
+            <div id="footer1">
+                thanks for using!
+            </div>
+            <div id="footer2" class="hidden">
+                ありがとございます！
+            </div>
         </div>
-
         <script type="module" src="./main.js"></script>
     </body>
 </html>

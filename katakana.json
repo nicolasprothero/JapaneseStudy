@@ -1,0 +1,454 @@
+{
+    "A": [
+        {
+            "English": "a",
+            "Japanese": "あ"
+        },
+        {
+            "English": "i",
+            "Japanese": "い"
+        },
+        {
+            "English": "u",
+            "Japanese": "う"
+        },
+        {
+            "English": "e",
+            "Japanese": "え"
+        },
+        {
+            "English": "o",
+            "Japanese": "お"
+        }
+    ],
+    "Ka": [
+        {
+            "English": "Ka",
+            "Japanese": "か"
+        },
+        {
+            "English": "Ki",
+            "Japanese": "き"
+        },
+        {
+            "English": "Ku",
+            "Japanese": "く"
+        },
+        {
+            "English": "Ke",
+            "Japanese": "け"
+        },
+        {
+            "English": "Ko",
+            "Japanese": "こ"
+        }
+    ],
+    "Sa": [
+        {
+            "English": "Sa",
+            "Japanese": "さ"
+        },
+        {
+            "English": "Shi",
+            "Japanese": "し"
+        },
+        {
+            "English": "Su",
+            "Japanese": "す"
+        },
+        {
+            "English": "Se",
+            "Japanese": "せ"
+        },
+        {
+            "English": "So",
+            "Japanese": "そ"
+        }
+    ],
+    "Ta": [
+        {
+            "English": "Ta",
+            "Japanese": "た"
+        },
+        {
+            "English": "Chi",
+            "Japanese": "ち"
+        },
+        {
+            "English": "Tsu",
+            "Japanese": "つ"
+        },
+        {
+            "English": "Te",
+            "Japanese": "て"
+        },
+        {
+            "English": "To",
+            "Japanese": "と"
+        }
+    ],
+    "Na": [
+        {
+            "English": "Na",
+            "Japanese": "な"
+        },
+        {
+            "English": "Ni",
+            "Japanese": "に"
+        },
+        {
+            "English": "Nu",
+            "Japanese": "ぬ"
+        },
+        {
+            "English": "Ne",
+            "Japanese": "ね"
+        },
+        {
+            "English": "No",
+            "Japanese": "の"
+        }
+    ],
+    "Ha": [
+        {
+            "English": "Ha",
+            "Japanese": "は"
+        },
+        {
+            "English": "Hi",
+            "Japanese": "ひ"
+        },
+        {
+            "English": "Fu",
+            "Japanese": "ふ"
+        },
+        {
+            "English": "He",
+            "Japanese": "へ"
+        },
+        {
+            "English": "Ho",
+            "Japanese": "ほ"
+        }
+    ],
+    "Ma": [
+        {
+            "English": "Ma",
+            "Japanese": "ま"
+        },
+        {
+            "English": "Mi",
+            "Japanese": "み"
+        },
+        {
+            "English": "Mu",
+            "Japanese": "む"
+        },
+        {
+            "English": "Me",
+            "Japanese": "め"
+        },
+        {
+            "English": "Mo",
+            "Japanese": "も"
+        }
+    ],
+    "Ya": [
+        {
+            "English": "Ya",
+            "Japanese": "や"
+        },
+        {
+            "English": "Yu",
+            "Japanese": "ゆ"
+        },
+        {
+            "English": "Yo",
+            "Japanese": "よ"
+        }
+    ],
+    "Ra": [
+        {
+            "English": "Ra",
+            "Japanese": "ら"
+        },
+        {
+            "English": "Ri",
+            "Japanese": "り"
+        },
+        {
+            "English": "Ru",
+            "Japanese": "る"
+        },
+        {
+            "English": "Re",
+            "Japanese": "れ"
+        },
+        {
+            "English": "Ro",
+            "Japanese": "ろ"
+        }
+    ],
+    "Wa + N": [
+        {
+            "English": "Wa",
+            "Japanese": "わ"
+        },
+        {
+            "English": "Wo",
+            "Japanese": "を"
+        },
+        {
+            "English": "n",
+            "Japanese": "ん"
+        }
+    ],
+    "Ga": [
+        {
+            "English": "Ga",
+            "Japanese": "が"
+        },
+        {
+            "English": "Gi",
+            "Japanese": "ぎ"
+        },
+        {
+            "English": "Gu",
+            "Japanese": "ぐ"
+        },
+        {
+            "English": "Ge",
+            "Japanese": "げ"
+        },
+        {
+            "English": "Go",
+            "Japanese": "ご"
+        }
+    ],
+    "Za": [
+        {
+            "English": "Za",
+            "Japanese": "ざ"
+        },
+        {
+            "English": "Ji",
+            "Japanese": "じ"
+        },
+        {
+            "English": "Zu",
+            "Japanese": "ず"
+        },
+        {
+            "English": "Ze",
+            "Japanese": "ぜ"
+        },
+        {
+            "English": "Zo",
+            "Japanese": "ぞ"
+        }
+    ],
+    "Da": [
+        {
+            "English": "Da",
+            "Japanese": "だ"
+        },
+        {
+            "English": "Di; Ji",
+            "Japanese": "ぢ"
+        },
+        {
+            "English": "Dzu; Zu",
+            "Japanese": "づ"
+        },
+        {
+            "English": "De",
+            "Japanese": "で"
+        },
+        {
+            "English": "Do",
+            "Japanese": "ど"
+        }
+    ],
+    "Ba": [
+        {
+            "English": "Ba",
+            "Japanese": "ば"
+        },
+        {
+            "English": "Bi",
+            "Japanese": "び"
+        },
+        {
+            "English": "Bu",
+            "Japanese": "ぶ"
+        },
+        {
+            "English": "Be",
+            "Japanese": "べ"
+        },
+        {
+            "English": "Bo",
+            "Japanese": "ぼ"
+        }
+    ],
+    "Pa": [
+        {
+            "English": "Pa",
+            "Japanese": "ぱ"
+        },
+        {
+            "English": "Pi",
+            "Japanese": "ぴ"
+        },
+        {
+            "English": "Pu",
+            "Japanese": "ぷ"
+        },
+        {
+            "English": "Pe",
+            "Japanese": "ぺ"
+        },
+        {
+            "English": "Po",
+            "Japanese": "ぽ"
+        }
+    ],
+    "ーya": [
+        {
+            "English": "Kya",
+            "Japanese": "きゃ"
+        },
+        {
+            "English": "Sha",
+            "Japanese": "しゃ"
+        },
+        {
+            "English": "Cha",
+            "Japanese": "ちゃ"
+        },
+        {
+            "English": "Nya",
+            "Japanese": "にゃ"
+        },
+        {
+            "English": "Hya",
+            "Japanese": "ひゃ"
+        },
+        {
+            "English": "Mya",
+            "Japanese": "みゃ"
+        },
+        {
+            "English": "Rya",
+            "Japanese": "りゃ"
+        },
+        {
+            "English": "Gya",
+            "Japanese": "ぎゃ"
+        },
+        {
+            "English": "Ja",
+            "Japanese": "じゃ"
+        },
+        {
+            "English": "Bya",
+            "Japanese": "びゃ"
+        },
+        {
+            "English": "Pya",
+            "Japanese": "ぴゃ"
+        }
+    ],
+    "ーyu": [
+        {
+            "English": "Kyu",
+            "Japanese": "きゅ"
+        },
+        {
+            "English": "Shu",
+            "Japanese": "しゅ"
+        },
+        {
+            "English": "Chu",
+            "Japanese": "ちゅ"
+        },
+        {
+            "English": "Nyu",
+            "Japanese": "にゅ"
+        },
+        {
+            "English": "Hyu",
+            "Japanese": "ひゅ"
+        },
+        {
+            "English": "Myu",
+            "Japanese": "みゅ"
+        },
+        {
+            "English": "Ryu",
+            "Japanese": "りゅ"
+        },
+        {
+            "English": "Gyu",
+            "Japanese": "ぎゅ"
+        },
+        {
+            "English": "Ju",
+            "Japanese": "じゅ"
+        },
+        {
+            "English": "Byu",
+            "Japanese": "びゅ"
+        },
+        {
+            "English": "Pyu",
+            "Japanese": "ぴゅ"
+        }
+    ],
+    "ーyo": [
+        {
+            "English": "Kyo",
+            "Japanese": "きょ"
+        },
+        {
+            "English": "Sho",
+            "Japanese": "しょ"
+        },
+        {
+            "English": "Cho",
+            "Japanese": "ちょ"
+        },
+        {
+            "English": "Nyo",
+            "Japanese": "にょ"
+        },
+        {
+            "English": "Hyo",
+            "Japanese": "ひょ"
+        },
+        {
+            "English": "Myo",
+            "Japanese": "みょ"
+        },
+        {
+            "English": "Ryo",
+            "Japanese": "りょ"
+        },
+        {
+            "English": "Gyo",
+            "Japanese": "ぎょ"
+        },
+        {
+            "English": "Jo",
+            "Japanese": "じょ"
+        },
+        {
+            "English": "Byo",
+            "Japanese": "びょ"
+        },
+        {
+            "English": "Pyo",
+            "Japanese": "ぴょ"
+        }
+    ]
+}
